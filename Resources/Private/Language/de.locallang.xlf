@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" product-name="form_brevo">
+		<header/>
+		<body>
+			<trans-unit id="finisher.subscribe.emailRejected" approved="yes">
+				<source>This e-mail address could not be accepted. Please use a different e-mail address.</source>
+				<target>Diese E-Mail-Adresse konnte nicht angenommen werden. Bitte verwenden Sie eine andere E-Mail-Adresse.</target>
+			</trans-unit>
+			<trans-unit id="finisher.subscribe.error" approved="yes">
+				<source>Your request could not be sent. Please try again later.</source>
+				<target>Ihre Anfrage konnte leider nicht übermittelt werden. Bitte versuchen Sie es später noch einmal.</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.listIds" approved="yes">
+				<source>List ids</source>
+				<target>Listen-IDs</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.listIds.description" approved="yes">
+				<source>Numeric Brevo list ids, comma-separated (Brevo: Contacts &gt; Lists &gt; ID column).</source>
+				<target>Numerische Brevo-Listen-IDs, durch Komma getrennt (Brevo: Kontakte &gt; Listen &gt; Spalte ID).</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.emailField" approved="yes">
+				<source>E-mail form field</source>
+				<target>Formularfeld mit der E-Mail-Adresse</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.attributes" approved="yes">
+				<source>Contact attributes</source>
+				<target>Kontakt-Attribute</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.attributes.description" approved="yes">
+				<source>Value = Brevo attribute name (e.g. VORNAME), label = form field in braces (e.g. {firstName}) or a fixed text. Empty fields are not sent.</source>
+				<target>Wert = Name des Brevo-Attributs (z. B. VORNAME), Beschriftung = Formularfeld in geschweiften Klammern (z. B. {firstName}) oder ein fester Text. Leere Felder werden nicht übertragen.</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.updateExisting" approved="yes">
+				<source>Update existing contacts</source>
+				<target>Bestehende Kontakte aktualisieren</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.doubleOptIn" approved="yes">
+				<source>Double opt-in (Brevo sends the confirmation mail)</source>
+				<target>Double-Opt-in (Brevo verschickt die Bestätigungsmail)</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.templateId" approved="yes">
+				<source>Double opt-in template id</source>
+				<target>Template-ID für Double-Opt-in</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.templateId.description" approved="yes">
+				<source>Id of a Brevo template of type double opt-in. Only used with double opt-in.</source>
+				<target>ID einer Brevo-Vorlage vom Typ Double-Opt-in. Nur bei Double-Opt-in.</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.redirectionUrl" approved="yes">
+				<source>Page after confirmation</source>
+				<target>Seite nach der Bestätigung</target>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.redirectionUrl.description" approved="yes">
+				<source>Absolute URL Brevo opens after the visitor confirmed. Only used with double opt-in.</source>
+				<target>Absolute URL, die Brevo nach der Bestätigung öffnet. Nur bei Double-Opt-in.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

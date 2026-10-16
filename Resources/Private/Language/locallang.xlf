@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="form_brevo">
+		<header/>
+		<body>
+			<trans-unit id="finisher.subscribe.emailRejected">
+				<source>This e-mail address could not be accepted. Please use a different e-mail address.</source>
+			</trans-unit>
+			<trans-unit id="finisher.subscribe.error">
+				<source>Your request could not be sent. Please try again later.</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.listIds">
+				<source>List ids</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.listIds.description">
+				<source>Numeric Brevo list ids, comma-separated (Brevo: Contacts &gt; Lists &gt; ID column).</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.emailField">
+				<source>E-mail form field</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.attributes">
+				<source>Contact attributes</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.attributes.description">
+				<source>Value = Brevo attribute name (e.g. VORNAME), label = form field in braces (e.g. {firstName}) or a fixed text. Empty fields are not sent.</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.updateExisting">
+				<source>Update existing contacts</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.doubleOptIn">
+				<source>Double opt-in (Brevo sends the confirmation mail)</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.templateId">
+				<source>Double opt-in template id</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.templateId.description">
+				<source>Id of a Brevo template of type double opt-in. Only used with double opt-in.</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.redirectionUrl">
+				<source>Page after confirmation</source>
+			</trans-unit>
+			<trans-unit id="formEditor.finisher.brevoSubscribe.redirectionUrl.description">
+				<source>Absolute URL Brevo opens after the visitor confirmed. Only used with double opt-in.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

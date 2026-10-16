@@ -1,0 +1,4 @@
+# cat=basic; type=string; label=Brevo API key (v3). Leave empty to read the environment variable BREVO_API_KEY instead.
+apiKey =
+# cat=basic; type=string; label=API base URL. Only change for tests against a mock server.
+apiBaseUrl = https://api.brevo.com/v3

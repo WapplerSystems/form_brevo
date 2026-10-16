@@ -1,0 +1,5 @@
+name: wapplersystems/form-brevo
+priority: 542
+
+imports:
+  - { resource: 'EXT:form_brevo/Configuration/Yaml/FormSetup.yaml' }

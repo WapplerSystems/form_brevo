@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  WapplerSystems\FormBrevo\:
+    resource: '../Classes/*'
+
+  WapplerSystems\FormBrevo\Finishers\BrevoSubscribeFinisher:
+    public: true
+    shared: false
+
+  WapplerSystems\FormBrevo\Brevo\Client:
+    public: true

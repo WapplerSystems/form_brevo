@@ -1,0 +1,46 @@
+{
+	"name": "wapplersystems/form-brevo",
+	"type": "typo3-cms-extension",
+	"description": "Brevo finisher for EXT:form: adds or updates contacts via the Brevo API, optionally with double opt-in",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"TYPO3",
+		"typo3-extension",
+		"brevo",
+		"sendinblue",
+		"form",
+		"finisher",
+		"newsletter"
+	],
+	"authors": [
+		{
+			"name": "Sven Wappler",
+			"email": "info@wappler.systems",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^8.2",
+		"typo3/cms-core": "^14",
+		"typo3/cms-form": "^14"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^11.5 || ^12.0",
+		"typo3/testing-framework": "^9.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"WapplerSystems\\FormBrevo\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"WapplerSystems\\FormBrevo\\Tests\\": "Tests"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "form_brevo"
+		}
+	}
+}

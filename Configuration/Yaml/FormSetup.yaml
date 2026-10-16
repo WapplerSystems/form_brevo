@@ -1,0 +1,99 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formEditor:
+            translationFiles:
+              2360: 'EXT:form_brevo/Resources/Private/Language/locallang.xlf'
+          formElementsDefinition:
+            Form:
+              formEditor:
+                editors:
+                  900:
+                    selectOptions:
+                      2360:
+                        value: BrevoSubscribe
+                        label: 'Brevo - Subscribe'
+                propertyCollections:
+                  finishers:
+                    2360:
+                      identifier: BrevoSubscribe
+                      editors:
+                        100:
+                          identifier: header
+                          templateName: Inspector-CollectionElementHeaderEditor
+                          label: 'Brevo - Subscribe'
+                        200:
+                          identifier: listIds
+                          templateName: Inspector-TextEditor
+                          label: 'formEditor.finisher.brevoSubscribe.listIds'
+                          fieldExplanationText: 'formEditor.finisher.brevoSubscribe.listIds.description'
+                          propertyPath: options.listIds
+                          propertyValidators:
+                            10: NotEmpty
+                        300:
+                          identifier: emailField
+                          templateName: Inspector-TextEditor
+                          label: 'formEditor.finisher.brevoSubscribe.emailField'
+                          placeholder: 'email'
+                          propertyPath: options.emailField
+                        400:
+                          identifier: attributes
+                          templateName: Inspector-PropertyGridEditor
+                          label: 'formEditor.finisher.brevoSubscribe.attributes'
+                          fieldExplanationText: 'formEditor.finisher.brevoSubscribe.attributes.description'
+                          propertyPath: options.attributes
+                          isSortable: false
+                          enableAddRow: true
+                          enableDeleteRow: true
+                          multiSelection: false
+                        500:
+                          identifier: updateExisting
+                          templateName: Inspector-CheckboxEditor
+                          label: 'formEditor.finisher.brevoSubscribe.updateExisting'
+                          propertyPath: options.updateExisting
+                        600:
+                          identifier: doubleOptIn
+                          templateName: Inspector-CheckboxEditor
+                          label: 'formEditor.finisher.brevoSubscribe.doubleOptIn'
+                          propertyPath: options.doubleOptIn
+                        700:
+                          identifier: templateId
+                          templateName: Inspector-TextEditor
+                          label: 'formEditor.finisher.brevoSubscribe.templateId'
+                          fieldExplanationText: 'formEditor.finisher.brevoSubscribe.templateId.description'
+                          propertyPath: options.templateId
+                        800:
+                          identifier: redirectionUrl
+                          templateName: Inspector-TextEditor
+                          label: 'formEditor.finisher.brevoSubscribe.redirectionUrl'
+                          fieldExplanationText: 'formEditor.finisher.brevoSubscribe.redirectionUrl.description'
+                          propertyPath: options.redirectionUrl
+                        9999:
+                          identifier: removeButton
+                          templateName: Inspector-RemoveElementEditor
+          finishersDefinition:
+            BrevoSubscribe:
+              implementationClassName: WapplerSystems\FormBrevo\Finishers\BrevoSubscribeFinisher
+              formEditor:
+                iconIdentifier: form-finisher-brevo
+                label: 'Brevo - Subscribe'
+                predefinedDefaults:
+                  options:
+                    listIds: ''
+                    emailField: 'email'
+                    attributes: {}
+                    updateExisting: true
+                    doubleOptIn: false
+                    templateId: ''
+                    redirectionUrl: ''
+              # Per-plugin override (settings.overrideFinishers=1): an editor
+              # can point one content element at other lists.
+              FormEngine:
+                label: 'Brevo - Subscribe'
+                elements:
+                  listIds:
+                    label: 'Brevo list ids (comma-separated)'
+                    config:
+                      type: input
